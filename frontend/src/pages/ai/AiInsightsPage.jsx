@@ -37,7 +37,7 @@ export const AiInsightsPage = () => {
         sender: "ai",
         timestamp: "Just now",
         result: {
-          summary: "Welcome to Ask Brightloop — Financial & Subscription Copilot",
+          summary: "Welcome to ValenceIQ — AI Financial Analyst Copilot",
           details:
             "I can analyze customer payment patterns, calculate MRR trajectories, detect overdue invoice anomalies, and draft customized collection notices. Pick a suggested question below or submit a custom inquiry.",
           metrics: [
@@ -95,12 +95,12 @@ export const AiInsightsPage = () => {
   return (
     <div className="space-y-6">
       <PageHeader
-        title="Ask Brightloop — AI Business Insights"
+        title="ValenceIQ — AI Financial Analyst"
         description="Natural-language operational copilot for cash collection reconciliation, churn forecasting, and billing risk audits."
         action={
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-indigo-50 text-indigo-700 border border-indigo-200 rounded-lg text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5" /> Phase 1 Demonstration Mode
+              <Sparkles className="w-3.5 h-3.5" /> Intelligence Active
             </span>
           </div>
         }
@@ -110,7 +110,7 @@ export const AiInsightsPage = () => {
       <div className="p-3.5 bg-amber-50/80 border border-amber-200 rounded-xl flex items-start gap-3 text-xs text-amber-900">
         <ShieldAlert className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
         <div className="leading-relaxed">
-          <span className="font-bold">Important Financial Truth Disclaimer:</span> AI-assisted insights in Brightloop are consultative and predictive. AI outputs must never be considered the legal or statutory source of financial truth; all collections and invoices are reconciled against verified bank ledgers and GAAP billing registers.
+          <span className="font-bold">Important Financial Truth Disclaimer:</span> AI-assisted insights in ValenceIQ are consultative and predictive. AI outputs must never be considered the legal or statutory source of financial truth; all collections and invoices are reconciled against verified bank ledgers and GAAP billing registers.
         </div>
       </div>
 
@@ -148,7 +148,7 @@ export const AiInsightsPage = () => {
             <div className="space-y-2 text-2xs text-slate-300">
               <div className="flex justify-between border-b border-slate-800 pb-1.5">
                 <span className="text-slate-400">Model Engine:</span>
-                <span className="font-mono text-blue-400 font-semibold">Brightloop LLM v1</span>
+                <span className="font-mono text-blue-400 font-semibold">ValenceIQ Engine v1</span>
               </div>
               <div className="flex justify-between border-b border-slate-800 pb-1.5">
                 <span className="text-slate-400">Data Source:</span>
@@ -192,7 +192,7 @@ export const AiInsightsPage = () => {
                   <div className={`space-y-2.5 grow ${isAi ? "text-left" : "text-right"}`}>
                     {/* Header info */}
                     <div className="flex items-center gap-2 text-3xs text-slate-400">
-                      <span className="font-semibold text-slate-700">{isAi ? "Ask Brightloop Copilot" : "You"}</span>
+                      <span className="font-semibold text-slate-700">{isAi ? "ValenceIQ Copilot" : "You"}</span>
                       <span>•</span>
                       <span>{msg.timestamp}</span>
                     </div>
@@ -318,7 +318,7 @@ export const AiInsightsPage = () => {
               </Button>
             </form>
             <div className="flex items-center justify-between mt-2 text-3xs text-slate-400">
-              <span>Ask Brightloop uses structured deterministic analysis in Phase 1.</span>
+              <span>ValenceIQ Financial Analyst uses structured deterministic intelligence.</span>
               <span>Protected Enterprise Sandbox</span>
             </div>
           </div>

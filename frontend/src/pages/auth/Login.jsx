@@ -4,6 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useNotifications } from "../../context/NotificationContext";
 import { Input } from "../../components/common/Input";
 import { Button } from "../../components/common/Button";
+import { BrandLogo } from "../../components/common/BrandLogo";
 import {
   Repeat,
   Shield,
@@ -21,8 +22,8 @@ export const Login = () => {
   const { showToast } = useNotifications();
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("admin@brightloop.io");
-  const [password, setPassword] = useState("Brightloop2024!");
+  const [email, setEmail] = useState("admin@valenceiq.com");
+  const [password, setPassword] = useState("ValenceIQ2026!");
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
@@ -59,12 +60,13 @@ export const Login = () => {
     <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
       <div className="max-w-md w-full">
         {/* Brand Header */}
-        <div className="text-center mb-8">
-          <div className="w-12 h-12 bg-gradient-to-tr from-blue-700 to-indigo-600 rounded-2xl mx-auto flex items-center justify-center text-white shadow-lg shadow-blue-500/25 mb-3">
-            <Repeat className="w-6 h-6 animate-pulse" />
-          </div>
-          <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Brightloop Software</h1>
-          <p className="text-xs text-slate-500 mt-1">Enterprise Subscription Management Cloud</p>
+        <div className="mb-8">
+          <BrandLogo
+            size="xl"
+            variant="stacked"
+            theme="light"
+            showTagline={true}
+          />
         </div>
 
         {/* Card */}
@@ -84,9 +86,9 @@ export const Login = () => {
             <div className="grid grid-cols-3 gap-2">
               <button
                 type="button"
-                onClick={() => handleDemoSelect("admin@brightloop.io", "Brightloop2024!")}
+                onClick={() => handleDemoSelect("admin@valenceiq.com", "ValenceIQ2026!")}
                 className={`p-2 rounded-lg border text-center transition-all cursor-pointer ${
-                  email === "admin@brightloop.io"
+                  email === "admin@valenceiq.com"
                     ? "border-purple-600 bg-purple-50 text-purple-900 font-semibold"
                     : "border-slate-200 bg-white hover:bg-slate-50 text-slate-700"
                 }`}
@@ -97,9 +99,9 @@ export const Login = () => {
 
               <button
                 type="button"
-                onClick={() => handleDemoSelect("priya@brightloop.io", "Brightloop2024!")}
+                onClick={() => handleDemoSelect("priya@valenceiq.com", "ValenceIQ2026!")}
                 className={`p-2 rounded-lg border text-center transition-all cursor-pointer ${
-                  email === "priya@brightloop.io"
+                  email === "priya@valenceiq.com"
                     ? "border-blue-600 bg-blue-50 text-blue-900 font-semibold"
                     : "border-slate-200 bg-white hover:bg-slate-50 text-slate-700"
                 }`}
@@ -110,7 +112,7 @@ export const Login = () => {
 
               <button
                 type="button"
-                onClick={() => handleDemoSelect("rajesh@techscale.in", "Brightloop2024!")}
+                onClick={() => handleDemoSelect("rajesh@techscale.in", "ValenceIQ2026!")}
                 className={`p-2 rounded-lg border text-center transition-all cursor-pointer ${
                   email === "rajesh@techscale.in"
                     ? "border-emerald-600 bg-emerald-50 text-emerald-900 font-semibold"
@@ -190,10 +192,10 @@ export const Login = () => {
           </div>
         </div>
 
-        {/* Phase 1 Notice */}
+        {/* Phase Platform Notice */}
         <div className="mt-6 text-center text-2xs text-slate-400">
-          <p>Brightloop Subscription Management System • Phase 1 Prototype</p>
-          <p className="mt-0.5">Frontend Mock Mode Active • Ready for Phase 2 API Integration</p>
+          <p>ValenceIQ Financial Analyst • Enterprise Platform</p>
+          <p className="mt-0.5">Analyze. Monitor. Optimize.</p>
         </div>
       </div>
     </div>

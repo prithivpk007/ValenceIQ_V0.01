@@ -1,6 +1,8 @@
-# Brightloop Software — Enterprise Subscription Management Cloud
+# ValenceIQ — FINANCIAL ANALYST
 
-Cloud-native B2B SaaS platform for full-lifecycle subscription management, dynamic pricing tier governance, sales quotation pipelines, recurring invoice reconciliation, customer self-service billing, and conversational AI analytics.
+> **Analyze. Monitor. Optimize.**
+
+An intelligent, modern financial analytics and enterprise subscription management platform. Cloud-native architecture with dynamic pricing tier governance, sales quotation pipelines, recurring invoice reconciliation, customer self-service billing, and conversational AI financial intelligence.
 
 ---
 
@@ -43,7 +45,7 @@ npm run install:all
 ```
 
 ### 2. Run Development Server
-From the root directory (`ValenceIQ`):
+From the root directory:
 ```bash
 # Starts the frontend Vite dev server (http://localhost:5173)
 npm run dev
@@ -68,5 +70,5 @@ npm run dev
 ---
 
 ## 📑 Detailed Documentation
-- [Frontend Documentation](file:///g:/ValenceIQ/frontend/README.md)
-- [Backend Documentation](file:///g:/ValenceIQ/backend/README.md)
+- [Frontend Documentation](file:///d:/study_files/HACKATON/Subscription_management_system/frontend/README.md)
+- [Backend Documentation](file:///d:/study_files/HACKATON/Subscription_management_system/backend/README.md)

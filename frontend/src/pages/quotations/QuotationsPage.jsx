@@ -49,7 +49,7 @@ export const QuotationsPage = () => {
       {
         id: "qi_init_1",
         productId: "prod_1",
-        productName: "Brightloop Core SaaS Platform (Professional)",
+        productName: "ValenceIQ Core Financial Platform (Professional)",
         quantity: 1,
         unitPrice: 1560,
         discountPercent: 0,
@@ -80,7 +80,7 @@ export const QuotationsPage = () => {
 
   const handleOpenCreate = () => {
     const cust = customers[0] || { id: "cust_1", name: "TechScale Solutions Pvt Ltd" };
-    const prod = products[0] || { id: "prod_1", name: "Brightloop Core SaaS Platform", baseSalesPrice: 1000 };
+    const prod = products[0] || { id: "prod_1", name: "ValenceIQ Core Financial Platform", baseSalesPrice: 1000 };
     setFormData({
       customerId: cust.id,
       customerName: cust.name,
@@ -105,7 +105,7 @@ export const QuotationsPage = () => {
   };
 
   const handleAddItem = () => {
-    const prod = products[0] || { id: "prod_1", name: "Brightloop Core", baseSalesPrice: 1000 };
+    const prod = products[0] || { id: "prod_1", name: "ValenceIQ Core", baseSalesPrice: 1000 };
     setFormData({
       ...formData,
       items: [
@@ -513,7 +513,7 @@ export const QuotationsPage = () => {
           isOpen={isPreviewOpen}
           onClose={() => setIsPreviewOpen(false)}
           title={`Quotation Preview: ${selectedQuote.quotationNumber}`}
-          subtitle="Brightloop Software Commercial Proposal"
+          subtitle="ValenceIQ Financial Analyst Commercial Proposal"
           size="lg"
           footer={
             <div className="flex justify-between w-full">
@@ -539,8 +539,8 @@ export const QuotationsPage = () => {
           <div className="p-6 bg-white border border-slate-200 rounded-xl space-y-6 text-xs text-slate-800 print:border-none print:p-0">
             <div className="flex justify-between items-start border-b border-slate-200 pb-4">
               <div>
-                <h3 className="text-xl font-bold text-slate-900">Brightloop Software</h3>
-                <p className="text-slate-500 text-2xs mt-1">Enterprise Subscription Billing Solutions</p>
+                <h3 className="text-xl font-bold text-slate-900">ValenceIQ Financial Systems</h3>
+                <p className="text-slate-500 text-2xs mt-1">Enterprise Financial Analytics & Subscription Solutions</p>
                 <p className="text-slate-400 text-2xs">Embassy TechVillage, Outer Ring Road, Bengaluru 560103</p>
               </div>
               <div className="text-right">

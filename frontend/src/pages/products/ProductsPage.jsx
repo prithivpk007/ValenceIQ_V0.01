@@ -327,7 +327,7 @@ export const ProductsPage = () => {
               id="name"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              placeholder="e.g. Brightloop Core SaaS Platform"
+              placeholder="e.g. ValenceIQ Core Financial Platform"
               required
             />
             <Input
@@ -335,7 +335,7 @@ export const ProductsPage = () => {
               id="code"
               value={formData.code}
               onChange={(e) => setFormData({ ...formData, code: e.target.value })}
-              placeholder="e.g. BL-CORE"
+              placeholder="e.g. VIQ-CORE"
               required
             />
           </div>

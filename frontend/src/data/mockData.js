@@ -1,10 +1,10 @@
-// Brightloop Software - Centralized Mock Dataset
+// ValenceIQ Financial Analyst — Centralized Mock Dataset
 
 export const mockUsers = [
   {
     id: "usr_admin_1",
     name: "Alex Sterling",
-    email: "admin@brightloop.io",
+    email: "admin@valenceiq.com",
     role: "admin",
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&auto=format&fit=crop&q=80",
     title: "Chief Operating Officer",
@@ -13,7 +13,7 @@ export const mockUsers = [
   {
     id: "usr_staff_1",
     name: "Priya Sharma",
-    email: "priya@brightloop.io",
+    email: "priya@valenceiq.com",
     role: "staff",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&auto=format&fit=crop&q=80",
     title: "Senior Account Executive",
@@ -36,7 +36,7 @@ export const mockStaffMembers = [
   {
     id: "stf_1",
     name: "Priya Sharma",
-    email: "priya@brightloop.io",
+    email: "priya@valenceiq.com",
     department: "Sales & Client Success",
     role: "Senior Account Executive",
     assignedCustomersCount: 14,
@@ -47,7 +47,7 @@ export const mockStaffMembers = [
   {
     id: "stf_2",
     name: "Arjun Mehta",
-    email: "arjun@brightloop.io",
+    email: "arjun@valenceiq.com",
     department: "Customer Operations",
     role: "Operations Specialist",
     assignedCustomersCount: 18,
@@ -58,7 +58,7 @@ export const mockStaffMembers = [
   {
     id: "stf_3",
     name: "Neha Nair",
-    email: "neha@brightloop.io",
+    email: "neha@valenceiq.com",
     department: "Billing & Finance",
     role: "Billing Coordinator",
     assignedCustomersCount: 22,
@@ -69,7 +69,7 @@ export const mockStaffMembers = [
   {
     id: "stf_4",
     name: "Vikram Das",
-    email: "vikram@brightloop.io",
+    email: "vikram@valenceiq.com",
     department: "Support & Success",
     role: "Support Lead",
     assignedCustomersCount: 9,
@@ -175,8 +175,8 @@ export const mockCustomers = [
 export const mockProducts = [
   {
     id: "prod_1",
-    name: "Brightloop Core SaaS Platform",
-    code: "BL-CORE",
+    name: "ValenceIQ Core Financial Platform",
+    code: "VIQ-CORE",
     type: "Subscription Software",
     baseSalesPrice: 1000,
     costPrice: 280,
@@ -192,8 +192,8 @@ export const mockProducts = [
   },
   {
     id: "prod_2",
-    name: "Brightloop Automation Suite",
-    code: "BL-AUTO",
+    name: "ValenceIQ Automation Suite",
+    code: "VIQ-AUTO",
     type: "Add-on Module",
     baseSalesPrice: 750,
     costPrice: 150,
@@ -203,13 +203,13 @@ export const mockProducts = [
       { id: "var_2_1", name: "Standard (10k events/mo)", priceAdjustment: 0, finalPrice: 750 },
       { id: "var_2_2", name: "Advanced (100k events/mo)", priceAdjustment: 450, finalPrice: 1200 },
     ],
-    notes: "Requires BL-CORE active license.",
+    notes: "Requires VIQ-CORE active license.",
     category: "Workflow",
   },
   {
     id: "prod_3",
-    name: "Brightloop AI Insights Engine",
-    code: "BL-AI",
+    name: "ValenceIQ Financial Analytics Engine",
+    code: "VIQ-AI",
     type: "AI & Analytics",
     baseSalesPrice: 1500,
     costPrice: 400,
@@ -219,7 +219,7 @@ export const mockProducts = [
       { id: "var_3_1", name: "Analytics Lite", priceAdjustment: 0, finalPrice: 1500 },
       { id: "var_3_2", name: "Predictive Pro", priceAdjustment: 1200, finalPrice: 2700 },
     ],
-    notes: "Includes Ask Brightloop Copilot.",
+    notes: "Includes ValenceIQ Copilot.",
     category: "Intelligence",
   },
   {
@@ -346,7 +346,7 @@ export const mockQuotations = [
       {
         id: "qi_1",
         productId: "prod_1",
-        productName: "Brightloop Core SaaS Platform (Professional)",
+        productName: "ValenceIQ Core Financial Platform (Professional)",
         quantity: 2,
         unitPrice: 1560,
         discountPercent: 10,
@@ -356,7 +356,7 @@ export const mockQuotations = [
       {
         id: "qi_2",
         productId: "prod_3",
-        productName: "Brightloop AI Insights Engine",
+        productName: "ValenceIQ Financial Analytics Engine",
         quantity: 1,
         unitPrice: 1500,
         discountPercent: 0,
@@ -384,7 +384,7 @@ export const mockQuotations = [
       {
         id: "qi_3",
         productId: "prod_1",
-        productName: "Brightloop Core SaaS Platform (Enterprise)",
+        productName: "ValenceIQ Core Financial Platform (Enterprise)",
         quantity: 1,
         unitPrice: 2800,
         discountPercent: 5,
@@ -422,7 +422,7 @@ export const mockQuotations = [
       {
         id: "qi_5",
         productId: "prod_2",
-        productName: "Brightloop Automation Suite (Standard)",
+        productName: "ValenceIQ Automation Suite (Standard)",
         quantity: 3,
         unitPrice: 750,
         discountPercent: 0,
@@ -450,7 +450,7 @@ export const mockQuotations = [
       {
         id: "qi_6",
         productId: "prod_1",
-        productName: "Brightloop Core SaaS Platform (Standard)",
+        productName: "ValenceIQ Core Financial Platform (Standard)",
         quantity: 5,
         unitPrice: 1000,
         discountPercent: 20,
@@ -616,7 +616,7 @@ export const mockInvoices = [
     balanceDue: 0,
     status: "Paid",
     items: [
-      { description: "Brightloop Enterprise Intelligence Monthly Base", quantity: 1, unitPrice: 5260, total: 5260 },
+      { description: "ValenceIQ Enterprise Financial Intelligence Monthly Base", quantity: 1, unitPrice: 5260, total: 5260 },
     ],
     notes: "Payment received in full via Razorpay Corporate on 2024-10-18.",
   },
@@ -708,7 +708,7 @@ export const mockInvoices = [
     balanceDue: 6206.8,
     status: "Overdue",
     items: [
-      { description: "Brightloop Enterprise Intelligence Monthly Service", quantity: 1, unitPrice: 5260, total: 5260 },
+      { description: "ValenceIQ Enterprise Financial Intelligence Monthly Service", quantity: 1, unitPrice: 5260, total: 5260 },
     ],
     notes: "Overdue by 4 days. Automated second payment reminder dispatched.",
   },
@@ -731,7 +731,7 @@ export const mockInvoices = [
     balanceDue: 2655,
     status: "Confirmed",
     items: [
-      { description: "Brightloop Automation Suite Provisioning", quantity: 1, unitPrice: 2250, total: 2250 },
+      { description: "ValenceIQ Automation Suite Provisioning", quantity: 1, unitPrice: 2250, total: 2250 },
     ],
     notes: "New invoice issued. Awaiting customer confirmation and initial payment.",
   },
@@ -864,7 +864,7 @@ export const mockDiscounts = [
     usageCount: 68,
     scope: "Product-level",
     status: "Active",
-    description: "Flat ₹500 recurring discount on Brightloop Core SaaS Starter plan.",
+    description: "Flat ₹500 recurring discount on ValenceIQ Core Financial Starter plan.",
   },
   {
     id: "disc_3",
@@ -1014,7 +1014,7 @@ export const mockAiPresetResponses = [
       { label: "Collection Rate", value: "73.1%", status: "On Track" },
     ],
     details:
-      "Brightloop Software currently has 5 active subscriptions generating a run-rate ARR of ₹4,21,680. Cash collections for October stand at ₹26,322.80 across settled invoices. Outstanding receivables include ₹840.80 pending on BluePeak Logistics (Partially Paid) and ₹6,206.80 overdue on Krypton Cyber Security.",
+      "ValenceIQ Financial Analyst currently has 5 active subscriptions generating a run-rate ARR of ₹4,21,680. Cash collections for October stand at ₹26,322.80 across settled invoices. Outstanding receivables include ₹840.80 pending on BluePeak Logistics (Partially Paid) and ₹6,206.80 overdue on Krypton Cyber Security.",
     recommendation: "Immediate outreach to Krypton Cyber Security regarding card authorization issue PAY-2024-00405 will recover 64% of total pending receivables.",
   },
   {
@@ -1059,24 +1059,24 @@ export const mockAiPresetResponses = [
     queryId: "q5",
     question: "Draft a polite reminder for an overdue invoice.",
     summary: "Suggested Email Draft for Overdue Invoices:",
-    draft: `Subject: Friendly Reminder: Outstanding Invoice INV-2024-00305 for Brightloop Services
+    draft: `Subject: Friendly Reminder: Outstanding Invoice INV-2024-00305 for ValenceIQ Services
 
 Dear Kavita,
 
 We hope you are having a productive week!
 
-This is a gentle reminder that Invoice INV-2024-00305 for ₹6,206.80 associated with your Brightloop Enterprise Intelligence Plan was due on 27 October 2024.
+This is a gentle reminder that Invoice INV-2024-00305 for ₹6,206.80 associated with your ValenceIQ Enterprise Financial Plan was due on 27 October 2024.
 
-Our records indicate that the automated card transaction was interrupted. To ensure uninterrupted service for your team, please review and update your payment method or complete the payment via our secure customer portal:
+Our records indicate that the automated transaction was interrupted. To ensure uninterrupted service for your team, please review and update your payment method or complete the payment via our secure customer portal:
 
-Portal Link: https://billing.brightloop.io/portal/invoices/inv_3005
+Portal Link: https://billing.valenceiq.com/portal/invoices/inv_3005
 
 If you have already processed this payment or have any billing queries, please feel free to reply directly to this email.
 
 Warm regards,
 Priya Sharma
 Client Success & Billing Team
-Brightloop Software`,
+ValenceIQ Financial Systems`,
     recommendation: "You can copy and send this message directly, or use the 'Send Payment Reminder' action button inside Invoice Management.",
   },
 ];

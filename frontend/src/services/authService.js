@@ -1,12 +1,13 @@
 import { mockUsers } from "../data/mockData";
 import { mockDelay, createApiResponse, createApiError } from "./apiClient";
 
-const STORAGE_KEY = "brightloop_auth_user";
+const STORAGE_KEY = "valenceiq_auth_user";
+const LEGACY_STORAGE_KEY = "brightloop_auth_user";
 
 class AuthService {
   constructor() {
     this.users = [...mockUsers];
-    const savedUser = localStorage.getItem(STORAGE_KEY);
+    const savedUser = localStorage.getItem(STORAGE_KEY) || localStorage.getItem(LEGACY_STORAGE_KEY);
     this.currentUser = savedUser ? JSON.parse(savedUser) : this.users[0]; // Default to Admin
   }
 

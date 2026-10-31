@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- ValenceIQ Geometric Financial Analytics Emblem -->
+  <!-- Left Wing: Deep Navy/Blue Downward Descent of V -->
+  <path
+    d="M8 12L20.5 37.5C21.1 38.8 22.9 38.8 23.5 37.5L27 30L16 12H8Z"
+    fill="#101D35"
+  />
+
+  <!-- Ascending Financial Growth Data Bars -->
+  <!-- Bar 1 (Initial Data Stage) -->
+  <rect x="15" y="25" width="4.5" height="11" rx="2" fill="#1D4ED8" />
+
+  <!-- Bar 2 (Growth Milestone) -->
+  <rect x="22.5" y="18" width="4.5" height="18" rx="2" fill="#2563EB" />
+
+  <!-- Bar 3 (Peak Performance) -->
+  <rect x="30" y="11" width="4.5" height="25" rx="2" fill="#3B82F6" />
+
+  <!-- Upward Trendline & Dynamic Ascending Right Wing of V -->
+  <path
+    d="M19 38L37.5 9.5C38 8.7 39 8.5 39.8 9L41.2 9.9C42 10.4 42.2 11.4 41.7 12.2L24.5 39.2C23.8 40.2 22.2 40.3 21.3 39.5L19 38Z"
+    fill="#2563EB"
+  />
+
+  <!-- High-Precision Analytics Intelligence Diamond (The 'IQ' Node) -->
+  <path
+    d="M39.5 3L44.5 8L39.5 13L34.5 8L39.5 3Z"
+    fill="#38BDF8"
+  />
+  <circle cx="39.5" cy="8" r="1.75" fill="#FFFFFF" />
+</svg>

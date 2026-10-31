@@ -127,7 +127,7 @@ export const CustomerInvoices = () => {
           isOpen={isPreviewOpen}
           onClose={() => setIsPreviewOpen(false)}
           title={`Tax Invoice: ${selectedInvoice.invoiceNumber}`}
-          subtitle="Brightloop Software Pvt Ltd • Formal Billing Document"
+          subtitle="ValenceIQ Financial Systems Pvt Ltd • Formal Billing Document"
           size="lg"
           footer={
             <div className="flex items-center justify-between w-full">
@@ -158,9 +158,9 @@ export const CustomerInvoices = () => {
             {/* Header */}
             <div className="flex justify-between items-start border-b border-slate-200 pb-6">
               <div>
-                <h2 className="text-xl font-bold text-slate-900">Brightloop Software Pvt. Ltd.</h2>
+                <h2 className="text-xl font-bold text-slate-900">ValenceIQ Financial Systems Pvt. Ltd.</h2>
                 <p className="text-xs text-slate-500 mt-1">Embassy TechVillage, Tower 2B, Bengaluru, KA 560103</p>
-                <p className="text-xs text-slate-500">GSTIN: 29AAACB1234F1Z8 • billing@brightloop.io</p>
+                <p className="text-xs text-slate-500">GSTIN: 29AAACB1234F1Z8 • billing@valenceiq.com</p>
               </div>
               <div className="text-right">
                 <span className="text-xs font-mono font-bold uppercase tracking-wider text-slate-400 block">

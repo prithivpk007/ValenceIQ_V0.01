@@ -33,7 +33,7 @@ app.use("/api/v1", apiRoutes);
 // Root route
 app.get("/", (req, res) => {
   res.json({
-    name: "Brightloop Software SMS API",
+    name: "ValenceIQ Financial Analyst API",
     version: "1.0.0",
     docs: "/api/v1/health",
   });
@@ -46,8 +46,8 @@ app.use(errorHandler);
 // Start server
 if (process.env.NODE_ENV !== "test") {
   app.listen(PORT, () => {
-    console.log(`[Brightloop API] Server running on http://localhost:${PORT}`);
-    console.log(`[Brightloop API] Health check at http://localhost:${PORT}/api/v1/health`);
+    console.log(`[ValenceIQ API] Server running on http://localhost:${PORT}`);
+    console.log(`[ValenceIQ API] Health check at http://localhost:${PORT}/api/v1/health`);
   });
 }
 

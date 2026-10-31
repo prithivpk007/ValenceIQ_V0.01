@@ -1,6 +1,6 @@
-# Brightloop Software — Backend REST API (Phase 2)
+# ValenceIQ Financial Analyst — Backend REST API (Phase 2)
 
-This service powers the backend REST API, database persistence, and authentication for the **Brightloop Subscription Management System (SMS)**.
+This service powers the backend REST API, database persistence, and authentication for the **ValenceIQ Financial Analyst** platform.
 
 ---
 

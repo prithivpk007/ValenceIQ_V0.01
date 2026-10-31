@@ -4,7 +4,7 @@ import { User } from "../models/User.js";
 const signToken = (user) =>
   jwt.sign(
     { id: user._id, role: user.role, email: user.email },
-    process.env.JWT_SECRET || "supersecret_jwt_key_brightloop_2024",
+    process.env.JWT_SECRET || "supersecret_jwt_key_valenceiq_2026",
     { expiresIn: process.env.JWT_EXPIRES_IN || "7d" }
   );
 

@@ -32,7 +32,7 @@ class AiService {
           { label: "Analyzed Accounts", value: "6 Subscriptions", status: "Active Scope" },
           { label: "Data Freshness", value: "Real-time Mock DB", status: "Phase 1 Cache" },
         ],
-        details: `Ask Brightloop has analyzed current billing cycles, contract terms, and customer activity logs. No critical anomalies detected outside normal operating thresholds. In Phase 2, this copilot will connect with deep vector embeddings and fine-tuned financial LLMs.`,
+        details: `ValenceIQ Financial Analyst has analyzed current billing cycles, contract terms, and customer activity logs. No critical anomalies detected outside normal operating thresholds. In Phase 2, this copilot connects with deep vector embeddings and fine-tuned financial models.`,
         recommendation: "Review the Analytics & Reports workspace for deep multi-dimensional charts.",
       };
     }

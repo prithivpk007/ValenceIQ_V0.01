@@ -44,14 +44,14 @@ async function seed() {
   // 1. Users
   const adminUser = await User.create({
     name: "Vikram Aditya",
-    email: "admin@brightloop.io",
+    email: "admin@valenceiq.com",
     password: "admin123",
     role: "admin",
     isActive: true,
   });
   const staffUser = await User.create({
     name: "Priya Sharma",
-    email: "priya@brightloop.io",
+    email: "priya@valenceiq.com",
     password: "staff123",
     role: "staff",
     isActive: true,
@@ -151,8 +151,8 @@ async function seed() {
   // 4. Products
   const products = await Product.insertMany([
     {
-      name: "BrightLoop Platform Core",
-      sku: "BL-PLATFORM-001",
+      name: "ValenceIQ Platform Core",
+      sku: "VIQ-PLATFORM-001",
       category: "Platform",
       basePrice: 14999,
       costPrice: 3000,
@@ -162,7 +162,7 @@ async function seed() {
     },
     {
       name: "Workflow Automation Suite",
-      sku: "BL-WORKFLOW-001",
+      sku: "VIQ-WORKFLOW-001",
       category: "Workflow",
       basePrice: 8999,
       costPrice: 1500,
@@ -172,7 +172,7 @@ async function seed() {
     },
     {
       name: "AI Intelligence Module",
-      sku: "BL-AI-001",
+      sku: "VIQ-AI-001",
       category: "Intelligence",
       basePrice: 9999,
       costPrice: 2500,
@@ -182,7 +182,7 @@ async function seed() {
     },
     {
       name: "Onboarding & Migration",
-      sku: "BL-SERVICE-001",
+      sku: "VIQ-SERVICE-001",
       category: "Professional Services",
       basePrice: 49999,
       costPrice: 20000,
@@ -392,7 +392,7 @@ async function seed() {
       customerId: customers[3]._id,
       customerName: "Pinnacle Capital Advisors",
       items: [
-        { productName: "BrightLoop Platform Core", quantity: 1, unitPrice: 14999, discountPercent: 10, amount: 13499.1 },
+        { productName: "ValenceIQ Platform Core", quantity: 1, unitPrice: 14999, discountPercent: 10, amount: 13499.1 },
         { productName: "AI Intelligence Module", quantity: 1, unitPrice: 9999, discountPercent: 0, amount: 9999 },
       ],
       subtotal: 24998,
@@ -443,8 +443,8 @@ async function seed() {
 
   console.log("\n✅ Seed complete!\n");
   console.log("Demo Login Credentials:");
-  console.log("  Admin  — email: admin@brightloop.io   password: admin123");
-  console.log("  Staff  — email: priya@brightloop.io   password: staff123");
+  console.log("  Admin  — email: admin@valenceiq.com   password: admin123");
+  console.log("  Staff  — email: priya@valenceiq.com   password: staff123");
 
   await mongoose.disconnect();
 }

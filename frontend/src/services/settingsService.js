@@ -2,12 +2,12 @@ import { mockDelay, createApiResponse } from "./apiClient";
 
 const DEFAULT_SETTINGS = {
   company: {
-    name: "Brightloop Software Pvt. Ltd.",
-    legalEntity: "Brightloop Technologies India Private Limited",
+    name: "ValenceIQ Financial Systems Pvt. Ltd.",
+    legalEntity: "ValenceIQ Technologies India Private Limited",
     corporateTaxId: "GSTIN29AAACB1234F1Z8",
-    email: "billing@brightloop.io",
+    email: "billing@valenceiq.com",
     phone: "+91 80 4123 4567",
-    website: "https://brightloop.io",
+    website: "https://valenceiq.com",
     address: "Embassy TechVillage, Tower 2B, Outer Ring Road, Bengaluru, KA 560103",
     currency: "INR (₹)",
     fiscalYearStart: "April",
@@ -36,7 +36,7 @@ const DEFAULT_SETTINGS = {
 
 class SettingsService {
   constructor() {
-    const saved = localStorage.getItem("brightloop_app_settings");
+    const saved = localStorage.getItem("valenceiq_app_settings") || localStorage.getItem("brightloop_app_settings");
     this.settings = saved ? JSON.parse(saved) : DEFAULT_SETTINGS;
   }
 
@@ -48,7 +48,7 @@ class SettingsService {
   async updateSettings(category, data) {
     await mockDelay(120);
     this.settings[category] = { ...this.settings[category], ...data };
-    localStorage.setItem("brightloop_app_settings", JSON.stringify(this.settings));
+    localStorage.setItem("valenceiq_app_settings", JSON.stringify(this.settings));
     return createApiResponse(this.settings, "Settings saved successfully");
   }
 }

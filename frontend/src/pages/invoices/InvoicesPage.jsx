@@ -297,12 +297,12 @@ export const InvoicesPage = () => {
           isOpen={isPreviewOpen}
           onClose={() => setIsPreviewOpen(false)}
           title={`Tax Invoice Preview: ${selectedInvoice.invoiceNumber}`}
-          subtitle="Brightloop Software • Original Tax Statement"
+          subtitle="ValenceIQ Financial Analyst • Original Tax Statement"
           size="lg"
           footer={
             <div className="flex justify-between w-full">
               <span className="text-2xs text-slate-400">
-                Phase 1 Preview • Print / Save as PDF available via browser
+                Print / Save as PDF available via browser
               </span>
               <Button variant="secondary" size="sm" icon={Printer} onClick={() => window.print()}>
                 Print Invoice
@@ -313,7 +313,7 @@ export const InvoicesPage = () => {
           <div className="p-6 bg-white border border-slate-200 rounded-xl space-y-6 text-xs text-slate-800 print:border-none print:p-0">
             <div className="flex justify-between items-start border-b border-slate-200 pb-4">
               <div>
-                <h2 className="text-lg font-bold text-slate-900">Brightloop Software Pvt. Ltd.</h2>
+                <h2 className="text-lg font-bold text-slate-900">ValenceIQ Financial Systems Pvt. Ltd.</h2>
                 <p className="text-slate-500 text-2xs mt-0.5">Embassy TechVillage, Tower 2B, Bengaluru, KA 560103</p>
                 <p className="text-slate-500 text-2xs">GSTIN: 29AAACB1234F1Z8</p>
               </div>

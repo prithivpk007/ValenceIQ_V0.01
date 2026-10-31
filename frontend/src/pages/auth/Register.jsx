@@ -4,6 +4,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useNotifications } from "../../context/NotificationContext";
 import { Input, Select } from "../../components/common/Input";
 import { Button } from "../../components/common/Button";
+import { BrandLogo } from "../../components/common/BrandLogo";
 import { Repeat, Mail, Lock, User, Building, Phone } from "lucide-react";
 
 export const Register = () => {
@@ -43,7 +44,7 @@ export const Register = () => {
     setIsLoading(true);
     try {
       await register(formData);
-      showToast("Registration successful! Welcome to Brightloop.", "success");
+      showToast("Registration successful! Welcome to ValenceIQ.", "success");
       navigate("/portal/dashboard");
     } catch (err) {
       setError(err.message || "Failed to register.");
@@ -55,12 +56,13 @@ export const Register = () => {
   return (
     <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
       <div className="max-w-lg w-full">
-        <div className="text-center mb-6">
-          <div className="w-12 h-12 bg-gradient-to-tr from-blue-700 to-indigo-600 rounded-2xl mx-auto flex items-center justify-center text-white shadow-lg mb-3">
-            <Repeat className="w-6 h-6 animate-pulse" />
-          </div>
-          <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Create Brightloop Account</h1>
-          <p className="text-xs text-slate-500 mt-1">Start managing subscriptions and invoices</p>
+        <div className="mb-6">
+          <BrandLogo
+            size="lg"
+            variant="stacked"
+            theme="light"
+            showTagline={true}
+          />
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200/80 p-8">

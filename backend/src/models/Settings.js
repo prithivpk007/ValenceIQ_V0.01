@@ -4,12 +4,12 @@ const settingsSchema = new mongoose.Schema(
   {
     singletonKey: { type: String, default: "global", unique: true },
     company: {
-      name: { type: String, default: "Brightloop Software Pvt. Ltd." },
-      legalEntity: { type: String, default: "Brightloop Technologies India Private Limited" },
+      name: { type: String, default: "ValenceIQ Financial Systems Pvt. Ltd." },
+      legalEntity: { type: String, default: "ValenceIQ Analytics India Private Limited" },
       corporateTaxId: { type: String, default: "GSTIN29AAACB1234F1Z8" },
-      email: { type: String, default: "billing@brightloop.io" },
+      email: { type: String, default: "billing@valenceiq.com" },
       phone: { type: String, default: "+91 80 4123 4567" },
-      website: { type: String, default: "https://brightloop.io" },
+      website: { type: String, default: "https://valenceiq.com" },
       address: { type: String, default: "Embassy TechVillage, Tower 2B, Outer Ring Road, Bengaluru, KA 560103" },
       currency: { type: String, default: "INR (₹)" },
       fiscalYearStart: { type: String, default: "April" },

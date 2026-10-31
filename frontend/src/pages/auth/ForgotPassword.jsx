@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { authService } from "../../services/authService";
 import { Input } from "../../components/common/Input";
 import { Button } from "../../components/common/Button";
+import { BrandLogo } from "../../components/common/BrandLogo";
 import { Repeat, Mail, ArrowLeft, CheckCircle2 } from "lucide-react";
 
 export const ForgotPassword = () => {
@@ -25,12 +26,15 @@ export const ForgotPassword = () => {
   return (
     <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
       <div className="max-w-md w-full">
-        <div className="text-center mb-6">
-          <div className="w-12 h-12 bg-gradient-to-tr from-blue-700 to-indigo-600 rounded-2xl mx-auto flex items-center justify-center text-white shadow-lg mb-3">
-            <Repeat className="w-6 h-6 animate-pulse" />
-          </div>
-          <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Forgot Password</h1>
-          <p className="text-xs text-slate-500 mt-1">Reset your Brightloop account access</p>
+        <div className="mb-6">
+          <BrandLogo
+            size="lg"
+            variant="stacked"
+            theme="light"
+            showTagline={false}
+          />
+          <h2 className="text-xl font-bold text-slate-900 tracking-tight text-center mt-3">Forgot Password</h2>
+          <p className="text-xs text-slate-500 text-center mt-0.5">Reset your ValenceIQ account access</p>
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl border border-slate-200/80 p-8">

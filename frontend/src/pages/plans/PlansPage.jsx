@@ -82,7 +82,7 @@ export const PlansPage = () => {
       availableFrom: new Date().toISOString().split("T")[0],
       availableUntil: "2025-12-31",
       description: "",
-      features: ["Brightloop Core Engine", "Automated Billing & Invoicing", "Email Support"],
+      features: ["ValenceIQ Core Engine", "Automated Billing & Invoicing", "Email Support"],
       autoClosureRules: "Automatic account termination after 15 days of non-payment.",
       earlyClosureRules: "Early termination permitted with 30-day advance notice.",
       pauseRules: "Permitted up to 60 days per calendar year.",

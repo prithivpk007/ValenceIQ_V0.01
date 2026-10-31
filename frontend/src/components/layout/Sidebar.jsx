@@ -1,4 +1,5 @@
 import React from "react";
+import { BrandLogo } from "../common/BrandLogo";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
 import {
@@ -76,28 +77,33 @@ export const Sidebar = ({ isCollapsed, setIsCollapsed, isMobileOpen, setIsMobile
   const navContent = (
     <div className="flex flex-col h-full bg-slate-900 text-slate-300 border-r border-slate-800">
       {/* Brand Header */}
-      <div className="h-16 px-4 flex items-center justify-between border-b border-slate-800 shrink-0">
-        <div className="flex items-center gap-3 overflow-hidden">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white shadow-md shadow-blue-500/20 shrink-0">
-            <Repeat className="w-5 h-5 animate-pulse" />
-          </div>
-          {!isCollapsed && (
-            <div className="truncate">
-              <h1 className="text-sm font-bold text-white tracking-tight flex items-center gap-1.5">
-                Brightloop <span className="text-blue-400 font-semibold text-xs">SaaS</span>
-              </h1>
-              <p className="text-2xs text-slate-400 truncate">Subscription Cloud</p>
-            </div>
-          )}
+      <div
+        className={`h-16 flex items-center border-b border-slate-800 shrink-0 ${
+          isCollapsed ? "justify-center px-2 flex-col gap-0.5 py-1" : "justify-between px-4"
+        }`}
+      >
+        <div
+          className="flex items-center overflow-hidden cursor-pointer"
+          onClick={() => isCollapsed && setIsCollapsed(false)}
+          title={isCollapsed ? "ValenceIQ — Financial Analyst (Click to expand)" : undefined}
+        >
+          <BrandLogo
+            size="md"
+            variant={isCollapsed ? "icon" : "full"}
+            theme="dark"
+            isCollapsed={isCollapsed}
+          />
         </div>
 
         {/* Collapse toggle (desktop only) */}
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
-          className="hidden lg:flex p-1 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer"
+          className={`hidden lg:flex p-1 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors cursor-pointer ${
+            isCollapsed ? "mt-0.5" : ""
+          }`}
           title={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
         >
-          {isCollapsed ? <ChevronRight className="w-4 h-4" /> : <ChevronLeft className="w-4 h-4" />}
+          {isCollapsed ? <ChevronRight className="w-3.5 h-3.5" /> : <ChevronLeft className="w-4 h-4" />}
         </button>
       </div>
 
@@ -167,7 +173,7 @@ export const Sidebar = ({ isCollapsed, setIsCollapsed, isMobileOpen, setIsMobile
           {!isCollapsed && (
             <div className="grow min-w-0">
               <p className="text-xs font-medium text-slate-200 truncate">{user?.name || "Alex Sterling"}</p>
-              <p className="text-2xs text-slate-400 truncate">{user?.email || "admin@brightloop.io"}</p>
+              <p className="text-2xs text-slate-400 truncate">{user?.email || "admin@valenceiq.com"}</p>
             </div>
           )}
           {!isCollapsed && (

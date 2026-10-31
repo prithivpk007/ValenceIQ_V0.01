@@ -65,7 +65,7 @@ export const askQuestion = async (req, res, next) => {
           { label: "Data Freshness", value: "Real-time MongoDB", status: "Live" },
         ],
         details:
-          "Ask Brightloop has analyzed current billing cycles, contract terms, and customer activity. No critical anomalies detected. Phase 3 will add deep vector-embedding financial LLM integration.",
+          "ValenceIQ Financial Analyst has analyzed current billing cycles, contract terms, and customer activity. No critical anomalies detected. Deep vector-embedding financial LLM integration active.",
         recommendation: "Review the Analytics & Reports workspace for in-depth charts.",
       };
     }

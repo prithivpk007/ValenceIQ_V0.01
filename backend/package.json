@@ -1,7 +1,7 @@
 {
   "name": "valenceiq-backend",
   "version": "1.0.0",
-  "description": "Brightloop Software — Subscription Management Backend REST API (Phase 2)",
+  "description": "ValenceIQ Financial Analyst — Subscription & Financial Analytics REST API (Phase 2)",
   "main": "src/server.js",
   "type": "module",
   "scripts": {
@@ -15,7 +15,7 @@
     "mongodb",
     "saas"
   ],
-  "author": "Brightloop Software",
+  "author": "ValenceIQ",
   "license": "Proprietary",
   "dependencies": {
     "bcryptjs": "^2.4.3",

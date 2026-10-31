@@ -20,7 +20,7 @@ const router = express.Router();
 router.get("/health", (req, res) => {
   res.json({
     status: "ok",
-    service: "Brightloop SMS REST API",
+    service: "ValenceIQ Financial Analyst REST API",
     version: "2.0.0",
     phase: "Phase 2 — Full MongoDB Backend",
     timestamp: new Date().toISOString(),

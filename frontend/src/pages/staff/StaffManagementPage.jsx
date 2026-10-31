@@ -229,7 +229,7 @@ export const StaffManagementPage = () => {
               type="email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              placeholder="arjun@brightloop.io"
+              placeholder="arjun@valenceiq.com"
               required
             />
             <Input

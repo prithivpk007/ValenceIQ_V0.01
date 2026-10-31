@@ -2,7 +2,7 @@
   "name": "valenceiq",
   "version": "1.0.0",
   "private": true,
-  "description": "Brightloop Software — Enterprise Subscription Management Cloud (Monorepo)",
+  "description": "ValenceIQ Financial Analyst — Enterprise Subscription & Financial Analytics Cloud (Monorepo)",
   "workspaces": [
     "frontend",
     "backend"
@@ -17,11 +17,12 @@
   },
   "keywords": [
     "subscription-management",
+    "financial-analyst",
     "saas",
     "react",
     "express",
     "mongodb"
   ],
-  "author": "Brightloop Software",
+  "author": "ValenceIQ",
   "license": "Proprietary"
 }

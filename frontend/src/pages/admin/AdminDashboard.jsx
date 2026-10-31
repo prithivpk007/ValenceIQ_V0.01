@@ -96,7 +96,7 @@ export const AdminDashboard = () => {
             </div>
             <Link to="/ai-insights">
               <Button variant="outline" size="sm" icon={Sparkles} className="bg-indigo-50/50 text-indigo-700 border-indigo-200">
-                Ask Brightloop Copilot
+                Ask ValenceIQ Copilot
               </Button>
             </Link>
           </div>

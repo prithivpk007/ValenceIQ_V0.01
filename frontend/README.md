@@ -1,6 +1,6 @@
-# Brightloop Software — Enterprise Subscription Management Cloud
+# ValenceIQ Financial Analyst — Enterprise Platform
 
-> **Phase 1 Delivery**: Complete Professional Frontend Architecture, Multi-Role Dashboards, Service Layer, and Interactive Product Specification.
+> **ValenceIQ**: Analyze. Monitor. Optimize. Intelligent financial analytics and full-lifecycle subscription management.
 
 [![Frontend Build](https://img.shields.io/badge/Vite%20Build-Passing-emerald)](https://github.com/prithivpk007/ValenceIQ_V0.01)
 [![React](https://img.shields.io/badge/React-19.x-blue)](https://react.dev/)
@@ -33,9 +33,9 @@
 21. [Page and Route Documentation](#21-page-and-route-documentation)
 22. [UI Component Architecture](#22-ui-component-architecture)
 23. [API Integration Strategy for Phase 2](#23-api-integration-strategy-for-phase-2)
-24. [Backend Development Roadmap (Phase 2)](#24-backend-development-roadmap-phase-2)
+24: [Backend Development Roadmap (Phase 2)](#24-backend-development-roadmap-phase-2)
 25. [Automated Billing & Dunning Roadmap (Phase 3)](#25-automated-billing--dunning-roadmap-phase-3)
-26. [AI Integration Roadmap ("Ask Brightloop")](#26-ai-integration-roadmap-ask-brightloop)
+26. [AI Integration Roadmap ("ValenceIQ Copilot")](#26-ai-integration-roadmap-valenceiq-copilot)
 27. [Security Considerations](#27-security-considerations)
 28. [Performance & Optimization Considerations](#28-performance--optimization-considerations)
 29. [Testing Strategy](#29-testing-strategy)
@@ -49,13 +49,13 @@
 ---
 
 ## 1. Project Title & Branding
-**Brightloop Software — Subscription Management System (SMS)**  
-A cloud-native B2B SaaS platform for full-lifecycle subscription management, dynamic pricing tier governance, sales quotation pipelines, recurring invoice reconciliation, customer self-service billing, and conversational AI analytics.
+**ValenceIQ — FINANCIAL ANALYST**  
+An intelligent, modern financial analytics and enterprise subscription management platform. Cloud-native architecture with dynamic pricing tier governance, sales quotation pipelines, recurring invoice reconciliation, customer self-service billing, and conversational AI analytics.
 
 ---
 
 ## 2. Project Overview
-Brightloop Software provides subscription-based software products to mid-market and enterprise organizations. This platform manages the end-to-end customer recurring revenue relationship—from prospect quotation negotiation and automated contract provisioning to recurring GST-compliant tax invoicing, partial payment reconciliations, customer self-service, and executive churn modeling.
+ValenceIQ Financial Analyst provides subscription-based software analytics to mid-market and enterprise organizations. This platform manages the end-to-end customer recurring revenue relationship—from prospect quotation negotiation and automated contract provisioning to recurring GST-compliant tax invoicing, partial payment reconciliations, customer self-service, and executive churn modeling.
 
 ---
 
@@ -74,7 +74,7 @@ Modern SaaS businesses suffer from revenue leakage and billing complexity caused
 - **Enterprise Multi-Tenancy & Roles**: Provide tailored experiences for Administrators, Account Executives / Operations Staff, and End Customers.
 - **Support Flexible Pricing Models**: Enable product variant tiers (Base Price + Adjustment = Final Displayed Price).
 - **Deliver Self-Service Efficiency**: Allow customers to review subscriptions, download printable tax invoices, and execute self-service card settlements.
-- **Provide Actionable Intelligence**: Incorporate executive analytics and "Ask Brightloop" AI copilot for immediate inquiry synthesis.
+- **Provide Actionable Intelligence**: Incorporate executive analytics and "ValenceIQ Copilot" AI assistant for immediate inquiry synthesis.
 
 ---
 
@@ -85,7 +85,7 @@ Modern SaaS businesses suffer from revenue leakage and billing complexity caused
 - **Quotation Pipeline**: Commercial draft-to-confirmation workflow with validity date expiration enforcement.
 - **Contract Conversion**: 1-click conversion from confirmed quotation to active subscription.
 - **Tax Invoicing & Reconciliation**: Automated GST (18%) invoicing, partial settlement tracking, and print-ready formal invoice layouts.
-- **Ask Brightloop Copilot**: Structured AI inquiry assistant providing financial summaries, overdue audits, and automated email draft generation.
+- **ValenceIQ Copilot**: Structured AI inquiry assistant providing financial summaries, overdue audits, and automated email draft generation.
 - **Enterprise Analytics**: Recharts-powered MRR trends, ARR projections, invoice aging schedules, and cohort churn rates.
 
 ---
@@ -104,7 +104,7 @@ Modern SaaS businesses suffer from revenue leakage and billing complexity caused
 | **Payment Operations** | Full Ledger Reconcile | Record Received Cheques/Wires | Settle via Card/UPI Rails |
 | **Discount Management** | Configure Codes & Rules | View Applicable Codes | View Applied Discounts |
 | **Staff Member Allocation** | Add, Edit, Reassign | Read-only Team Directory | No Access |
-| **AI Insights ("Ask Brightloop")** | Full Inquiry Workspace | Operational Prompts | No Access |
+| **AI Insights ("ValenceIQ Copilot")** | Full Inquiry Workspace | Operational Prompts | No Access |
 | **System Settings** | Legal Entity, Taxes, Dunning | View Company Profile | Manage Own Profile & Password |
 
 ---
@@ -165,7 +165,7 @@ Modern SaaS businesses suffer from revenue leakage and billing complexity caused
 - Directory of internal Account Executives and Operations Specialists.
 - Tracks client account loads per staff member and department designations.
 
-### 7.10 AI Insights ("Ask Brightloop")
+### 7.10 AI Insights ("ValenceIQ Copilot")
 - Consultative conversational copilot with 5 verified financial presets and custom question input.
 - Structured output rendering: Executive summary, metric stat cards, detailed audit points, copyable email reminders, and recommended next actions.
 - Clear financial truth disclaimers stating that all formal figures must reference verified accounting registers.
@@ -293,7 +293,7 @@ Subscription_management_system/
 │   │   ├── payments/          # Payment Reconciliations
 │   │   ├── discounts/         # Promotional Campaigns
 │   │   ├── analytics/         # Financial Analytics & Cohort Curves
-│   │   ├── ai/                # Ask Brightloop AI Copilot
+│   │   ├── ai/                # ValenceIQ Copilot AI Intelligence
 │   │   ├── notifications/     # Event Dispatch Center
 │   │   └── settings/          # System Settings & Legal Entity
 │   ├── routes/                # Central AppRoutes definition
@@ -340,7 +340,7 @@ In Phase 1, the frontend runs autonomously with an in-memory mock service layer.
 ```env
 # Phase 2 Backend Integration Config
 VITE_API_BASE_URL=http://localhost:5000/api/v1
-VITE_APP_NAME="Brightloop Software"
+VITE_APP_NAME="ValenceIQ Financial Analyst"
 VITE_CURRENCY="INR"
 VITE_ENABLE_MOCK_FALLBACK=true
 ```
@@ -373,9 +373,9 @@ The application includes an instant **Demo Role Switcher** located in the top na
 
 | Role | Demo Credentials | Description & Landing Page |
 | :--- | :--- | :--- |
-| **Administrator** | `admin@brightloop.io` / `Brightloop2024!` | Full executive controls, all modules, AI copilot (`/admin/dashboard`) |
-| **Staff Member** | `priya@brightloop.io` / `Brightloop2024!` | Account Executive view, quotation dispatch, collections (`/staff/dashboard`) |
-| **Customer** | `rajesh@techscale.in` / `Brightloop2024!` | TechScale Solutions Pvt Ltd Self-Service Portal (`/portal/dashboard`) |
+| **Administrator** | `admin@valenceiq.com` / `ValenceIQ2026!` | Full executive controls, all modules, AI copilot (`/admin/dashboard`) |
+| **Staff Member** | `priya@valenceiq.com` / `ValenceIQ2026!` | Account Executive view, quotation dispatch, collections (`/staff/dashboard`) |
+| **Customer** | `rajesh@techscale.in` / `ValenceIQ2026!` | TechScale Solutions Pvt Ltd Self-Service Portal (`/portal/dashboard`) |
 
 *Tip: Clicking the "Demo Role" pill in the header instantly switches user persona without requiring manual re-login.*
 
@@ -415,7 +415,7 @@ All mock records in `src/data/mockData.js` are cross-referenced and mathematical
 | `/discounts` | `DiscountsPage.jsx` | Admin | Promo codes, percentage/fixed scopes, usage limits |
 | `/staff` | `StaffManagementPage.jsx`| Admin | Team members and account allocations |
 | `/analytics` | `AnalyticsPage.jsx` | Admin / Staff | MRR trajectory, ARR, invoice aging, churn index |
-| `/ai-insights` | `AiInsightsPage.jsx` | Admin / Staff | Ask Brightloop natural language copilot |
+| `/ai-insights` | `AiInsightsPage.jsx` | Admin / Staff | ValenceIQ Copilot natural language assistant |
 | `/notifications` | `NotificationsPage.jsx` | All | Notification center with category filtering |
 | `/settings` | `SettingsPage.jsx` | All | Legal corporate profile, dunning rules, preferences |
 
@@ -464,7 +464,7 @@ The frontend is built with a decoupled Service Layer. In Phase 2:
 
 ---
 
-## 26. AI Integration Roadmap ("Ask Brightloop")
+## 26. AI Integration Roadmap ("ValenceIQ Copilot")
 - Connect the Phase 1 `AiInsightsPage` interface to a secure LLM backend (e.g. Gemini 1.5 Pro).
 - Implement Retrieval-Augmented Generation (RAG) using LangChain / LlamaIndex over sanitized billing ledgers.
 - Vector search for customer contract clauses and SLA agreements.
@@ -515,7 +515,7 @@ The frontend is built with a decoupled Service Layer. In Phase 2:
 ## 31. Known Limitations in Phase 1
 - **Client-Side Mock Persistence**: Data mutations (e.g., creating a product or recording a payment) persist in in-memory state and localStorage during the browser session.
 - **Simulated Payment Gateway**: The "Pay Now" and "Record Payment" buttons immediately execute simulated ledger settlements rather than opening live banking gateways.
-- **Consultative AI**: "Ask Brightloop" uses verified deterministic mock analysis rather than a live external LLM API token.
+- **Consultative AI**: "ValenceIQ Copilot" uses verified deterministic mock analysis rather than a live external LLM API token.
 
 ---
 
@@ -547,7 +547,7 @@ The frontend is built with a decoupled Service Layer. In Phase 2:
 
 ## 35. Author & Contributor Credits
 - **Lead Developer & Contributor**: **jayeshraju** ([@jayeshraju](https://github.com/jayeshraju)) • `jayeshraju@gmail.com`
-- **Engineering Team**: Brightloop Software Engineering & Architecture
+- **Engineering Team**: ValenceIQ Engineering & Architecture
 - **Repository**: [https://github.com/prithivpk007/ValenceIQ_V0.01](https://github.com/prithivpk007/ValenceIQ_V0.01)
 - **Phase 1 Delivery Date**: October 2024
 
