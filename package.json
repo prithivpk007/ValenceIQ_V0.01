@@ -1,28 +1,27 @@
 {
-  "name": "subscription-management-system",
+  "name": "valenceiq",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "description": "Brightloop Software — Enterprise Subscription Management Cloud (Monorepo)",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "oxlint",
-    "preview": "vite preview"
+    "dev": "npm run dev --prefix frontend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "install:all": "npm install --prefix frontend && npm install --prefix backend",
+    "lint": "npm run lint --prefix frontend"
   },
-  "dependencies": {
-    "lucide-react": "^1.66.0",
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1",
-    "react-router-dom": "^7.18.5",
-    "recharts": "^3.10.1"
-  },
-  "devDependencies": {
-    "@tailwindcss/vite": "^4.3.3",
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
-    "oxlint": "^1.89.0",
-    "tailwindcss": "^4.3.3",
-    "vite": "^8.3.5"
-  }
+  "keywords": [
+    "subscription-management",
+    "saas",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Brightloop Software",
+  "license": "Proprietary"
 }
