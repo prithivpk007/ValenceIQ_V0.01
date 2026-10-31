@@ -235,7 +235,7 @@ export const AnalyticsPage = () => {
           <div className="p-3 bg-white rounded-lg border border-slate-200">
             <p className="font-semibold text-slate-800">Collection Rate Ratio</p>
             <p className="text-2xs text-slate-500 mt-1">
-              Percentage of invoices billed in the cycle that have reached 'Paid' status (Currently at 73.1% healthy benchmark).
+              Percentage of invoices billed in the cycle that have reached 'Paid' status .
             </p>
           </div>
         </div>
