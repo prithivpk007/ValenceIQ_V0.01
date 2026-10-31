@@ -546,6 +546,8 @@ The frontend is built with a decoupled Service Layer. In Phase 2:
 ---
 
 ## 35. Author & Contributor Credits
+- **Lead Developer & Contributor**: **jayeshraju** ([@jayeshraju](https://github.com/jayeshraju)) • `jayeshraju@gmail.com`
 - **Engineering Team**: Brightloop Software Engineering & Architecture
 - **Repository**: [https://github.com/prithivpk007/ValenceIQ_V0.01](https://github.com/prithivpk007/ValenceIQ_V0.01)
 - **Phase 1 Delivery Date**: October 2024
+
